@@ -1,6 +1,6 @@
 <script>
 let x = window.location.search;
-if (x.startswith("?jt=")) {
+if (x.startsWith("?jt=")) {
   window.location = "https://kanji.jitenon.jp/cat/search.php?getdata=" + decodeURI(window.location.search.substr(4)).charCodeAt(0).toString(16) + "&search=contain&how=すべて";
 }
 </script>
